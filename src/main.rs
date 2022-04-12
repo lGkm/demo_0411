@@ -1,3 +1,9 @@
+use trait;
+
+
+
 fn main() {
-    println!("Hello, world!");
+    r#trait::my_println();
+
+
 }
