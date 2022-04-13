@@ -1,9 +1,9 @@
-use trait;
-
+pub mod trait_TrafficLight;
 
 
 fn main() {
-    r#trait::my_println();
+    // 灯
+    trait_TrafficLight::my_light_print();
 
 
 }

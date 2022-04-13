@@ -1,6 +1,6 @@
-mod  trait;
 
-trait time{
+
+trait Time{
     fn show_time(&self) -> u8;
 }
 
@@ -10,7 +10,7 @@ enum TrafficColor {
     Yellow
 }
 
-impl time for TrafficColor{
+impl Time for TrafficColor{
     fn show_time(&self)->u8{
         match self {
             TrafficColor::Green => 90,
@@ -21,7 +21,7 @@ impl time for TrafficColor{
 }
 
 pub fn my_light_print() {
-    println!("{}",TrafficColor::Red.show_time());
-    println!("{}",TrafficColor::Green.show_time());
-    println!("{}",TrafficColor::Yellow.show_time());
+    println!("红灯：{}",TrafficColor::Red.show_time());
+    println!("绿灯：{}",TrafficColor::Green.show_time());
+    println!("黄灯：{}",TrafficColor::Yellow.show_time());
 }
